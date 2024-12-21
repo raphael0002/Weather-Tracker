@@ -122,11 +122,11 @@ const WeatherDashboard = () => {
           <CurrentWeather
             data={weatherQuery.data}
             locationName={locationName}
-          />
-          <HourlyTemperature data={forecastQuery.data} />
-        </div>
-        <div className="grid gap-6 lg:grid-cols-2 items-start">
+          />{" "}
           <WeatherDeatils data={weatherQuery.data} />
+        </div>
+        <div className="grid gap-6 items-start">
+          <HourlyTemperature data={forecastQuery.data} />
           <WeatherForecast data={forecastQuery.data} />
         </div>
       </div>
